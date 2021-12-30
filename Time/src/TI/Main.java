@@ -1,0 +1,29 @@
+package TI;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int index=0;
+		for(int i=1;i<=n;i++) {
+			if(i<=n) {
+				for(int j=1;j<=i;j++) {
+					System.out.print(i);
+					if(j<i)
+						System.out.print("*");
+				}
+			}else {
+				for(int j=1;j<=n-index;j++) {
+					System.out.print(n-index);
+					if(j<(n-index))
+						System.out.print("*");
+				}
+				index++;
+			}
+			System.out.println();
+
+		}
+	}
+}
